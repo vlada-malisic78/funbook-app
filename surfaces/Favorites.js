@@ -1,15 +1,14 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { useHeaderHeight } from "@react-navigation/elements";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useHeaderHeight } from "@react-navigation/elements";
 
-export default function Feed() {
+export default function Favorites() {
   const headerHeight = useHeaderHeight();
-
   return (
-    <SafeAreaView style={{ flex: 1, paddingTop: headerHeight }}>
+    <SafeAreaView style={{ paddingTop: headerHeight, flex: 1 }}>
       <View>
-        <Text style={{ fontFamily: "Poppins_400Regular" }}>Feed</Text>
+        <Text>Favorites</Text>
       </View>
     </SafeAreaView>
   );
