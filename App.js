@@ -42,6 +42,13 @@ function Home() {
           tabBarInactiveTintColor: "#000000",
           tabBarShowLabel: false,
           headerTransparent: true,
+          headerTitleAlign: "left",
+          headerTitleStyle: {
+            paddingTop: 140,
+            paddingBottom: 40,
+            textAlign: "left",
+            fontWeight: "bold",
+          },
         })}
       >
         <Tab.Screen name="Feed" component={Feed} />
